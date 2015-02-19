@@ -1,0 +1,38 @@
+// Graphical variables
+@import "config/variables";
+@import "config/bootstrap_variables";
+
+// External libraries
+@import "bootstrap";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+// Your CSS
+@import "layout/index";
+@import "components/index";
+@import "pages/index";
+@import "vendor/index";
+
+
+.container{
+  margin: 0px;
+  margin: auto;
+  width: 700px;
+}
+
+td{
+  padding: 5px 10px;
+}
+
+th{
+  background-color: #AAAAAA;
+  padding: 10px 10px;
+}
+
+table{
+  width: 700px;
+}
+
+h1{
+  padding: 20px 0px;
+}
