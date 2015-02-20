@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Picture</th>
       <th>Name</th>
       <th colspan="3"></th>
     </tr>
@@ -14,6 +15,7 @@
   <tbody>
     <% @cocktails.each do |cocktail| %>
       <tr>
+        <td><%= link_to (image_tag cocktail.picture.url(:thumb)), cocktail_doses_path(cocktail) %></td>
         <td><%= link_to cocktail.name, cocktail_doses_path(cocktail), {class: "index_link"} %></td>
         <td><%= link_to '<i class="fa fa-eye"></i>'.html_safe, cocktail_doses_path(cocktail) %></td>
         <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_cocktail_path(cocktail) %></td>

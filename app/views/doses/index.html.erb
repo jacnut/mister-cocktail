@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1><%= @cocktail.name %></h1>
+<h1><%= image_tag @cocktail.picture.url(:thumb) %> &nbsp;<%= @cocktail.name %></h1>
 
 <table>
   <thead>
