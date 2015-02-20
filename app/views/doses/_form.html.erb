@@ -6,7 +6,8 @@
     <%= f.association :ingredient %>
   </div>
 
-  <div class="form-actions">
+    <div class="btn-group" role="group" aria-label="buttons">
+    <%= link_to 'Back', cocktail_doses_path(@cocktail), {class: "btn btn-primary btn-sm"} %>
     <%= f.button :submit, {class: "btn btn-primary btn-sm"} %>
-  </div>
+    </div>
 <% end %>
