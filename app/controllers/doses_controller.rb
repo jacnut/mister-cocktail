@@ -20,7 +20,7 @@ class DosesController < ApplicationController
   def create
     @dose = @cocktail.doses.build(dose_params)
     if @dose.save
-    redirect_to @cocktail, notice: 'Dose was successfully created.'
+    redirect_to cocktail_doses_path(@cocktail), notice: 'Dose was successfully created.'
       else
         render :new
       end

@@ -1,6 +1,8 @@
 <h1>Editing Dose</h1>
 
 <%= render 'form' %>
+<br>
 
-<%= link_to 'Show', cocktail_doses_path(@dose.cocktail) %> |
-<%= link_to 'Back', :root %>
+
+<%= link_to 'Show', cocktail_doses_path(@dose.cocktail), {class: "btn btn-primary"}  %> |
+<%= link_to 'Back', :root, {class: "btn btn-primary"} %>
