@@ -13,11 +13,32 @@
 @import "pages/index";
 @import "vendor/index";
 
+html,
+body {
+  margin:0;
+  padding:0;
+  height:100%;
+}
 
-.container{
+#wrapper_container {
+  min-height:100%;
+  position:relative;
+  margin-top: 50px;
+}
+
+.content_container{
   margin: 0px;
   margin: auto;
   width: 700px;
+  padding-bottom: 80px;
+}
+
+#footer_container {
+  width:100%;
+  height:100px;
+  position:absolute;
+  bottom:0;
+  left:0;
 }
 
 td{
@@ -49,4 +70,5 @@ h1{
 a{
   color: grey;
 }
+
 
