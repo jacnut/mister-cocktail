@@ -10,13 +10,14 @@
     </tr>
   </thead>
 
+
   <tbody>
     <% @cocktails.each do |cocktail| %>
       <tr>
-        <td><%= cocktail.name %></td>
-        <td><%= link_to 'Show', cocktail_doses_path(cocktail) %></td>
-        <td><%= link_to 'Edit', edit_cocktail_path(cocktail) %></td>
-        <td><%= link_to 'Destroy', cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to cocktail.name, cocktail_doses_path(cocktail), {class: "index_link"} %></td>
+        <td><%= link_to '<i class="fa fa-eye"></i>'.html_safe, cocktail_doses_path(cocktail) %></td>
+        <td><%= link_to '<i class="fa fa-pencil"></i>'.html_safe, edit_cocktail_path(cocktail) %></td>
+        <td><%= link_to '<i class="fa fa-trash-o"></i>'.html_safe, cocktail, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -24,4 +25,4 @@
 
 <br>
 
-<%= link_to 'New Cocktail', new_cocktail_path %>
+<%= link_to 'New Cocktail', new_cocktail_path, {class: "btn btn-primary btn-sm"} %>

@@ -15,6 +15,7 @@
   <%= @dose.ingredient.name %>
 </p>
 
-
-<%= link_to 'Edit', edit_cocktail_dose_path(@dose.cocktail, @dose) %> |
-<%= link_to 'Back', cocktail_doses_path(@dose.cocktail) %>
+<div class="btn-group" role="group" aria-label="buttons">
+<%= link_to 'Edit', edit_cocktail_dose_path(@dose.cocktail, @dose), {class: "btn btn-primary btn-sm"} %>
+<%= link_to 'Back', cocktail_doses_path(@dose.cocktail), {class: "btn btn-primary btn-sm"} %>
+</div>

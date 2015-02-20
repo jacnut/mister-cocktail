@@ -5,13 +5,6 @@
     <%= f.input :name %>
   </div>
 
-    <%= f.simple_fields_for :doses do |ff| %>
-      <div class="form-inputs">
-        <%= ff.input :description %>
-        <%= ff.association :ingredient %>
-      </div>
-    <% end %>
-
   <div class="actions">
     <%= f.button :submit, {class: "btn btn-primary btn-sm"} %>
   </div>
