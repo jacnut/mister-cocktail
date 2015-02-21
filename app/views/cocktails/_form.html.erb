@@ -6,12 +6,14 @@
     <%= f.input :picture, as: :file %>
   </div>
 
+<!-- This integrates the create dose form into the cocktail create form -->
     <%= f.simple_fields_for :doses do |ff| %>
       <div class="form-inputs">
         <%= ff.input :description %>
         <%= ff.association :ingredient %>
       </div>
     <% end %>
+<!-- Also need to modify the cocktail model & controller new and params -->
 
 <div class="btn-group" role="group">
   <%= link_to 'Back', cocktails_path, {class: "btn btn-primary btn-sm"} %>

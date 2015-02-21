@@ -10,8 +10,8 @@ class CocktailsController < ApplicationController
 
   def new
     @cocktail = Cocktail.new
-    @cocktail.doses.push Dose.new
-    #@cocktail.doses.build
+    @cocktail.doses.push Dose.new   #line added to integrate dose form in cocktail form
+    #@cocktail.doses.build  #---- same as line above -----
   end
 
   def edit
@@ -47,6 +47,8 @@ class CocktailsController < ApplicationController
   end
 
   def cocktail_params
+    # to integrate dose form in cocktail form ----------------
+    # added doses_attributes to permit with array of params
     params.require(:cocktail).permit(:name, :picture, doses_attributes:[:description, :ingredient_id])
   end
 end

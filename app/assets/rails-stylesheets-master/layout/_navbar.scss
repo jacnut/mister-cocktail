@@ -1,19 +1,30 @@
+
+
 .header_container {
   z-index:3;
   top:0px;
   width:100%;
   position:fixed;
-  padding:0px;
   }
 
-.show {
+// ------- show_nav and hide_nav are used in the js ----------
+
+.show_nav {
     visibility: visible;
     opacity: 1;
-    transition: 2s;
+    transition: 0.4s;
 }
 
-.hide {
+.hide_nav {
    visibility: hidden;
    opacity: 0;
-  transition: 2s;
+  transition: 0.4s;
+}
+
+.nav-padding-left{
+  padding-left: 40px;
+}
+
+.nav-padding-right{
+  padding-right: 40px;
 }

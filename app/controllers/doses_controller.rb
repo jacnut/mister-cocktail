@@ -4,6 +4,7 @@ class DosesController < ApplicationController
 
   def index
     @doses = @cocktail.doses
+    @dose = Dose.new
   end
 
   def show
