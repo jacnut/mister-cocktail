@@ -18,7 +18,7 @@
 
 
 $(document).ready(function() {
-
+//js script for disappearing navbar (needs to be better)
     $(window).scroll({
             previousTop: 0
         },

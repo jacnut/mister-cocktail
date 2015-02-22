@@ -2,15 +2,15 @@
 
 <div class="row">
   <div class="col-xs-12 col-md-6 text-center">
-  <h1>Listing Cocktails</h1>
+  <h1 class = "pullUp">Listing Cocktails</h1>
   </div>
 </div>
 
   <div class = "row">
     <% @cocktails.each do |cocktail| %>
         <div class="col-xs-6 col-sm-4 col-md-3 text-center">
-          <p><div class = "img-container img-rounded center-block">
-            <%= link_to (image_tag cocktail.picture.url(:mini), {class: "center-block"}), cocktail_doses_path(cocktail) %>
+          <p><div class = "img-container img-rounded center-block hatch">
+            <%= link_to (image_tag cocktail.picture.url(:mini), {class: "center-block "}), cocktail_doses_path(cocktail) %>
           </div></p>
           <p><%= link_to cocktail.name, cocktail_doses_path(cocktail) %><p>
         </div>
@@ -20,5 +20,5 @@
 <br>
 
  <div class="col-xs-6 col-md-3 text-center">
-<%= link_to 'New Cocktail', new_cocktail_path, {class: "btn btn-primary btn-sm"} %>
+<%= link_to 'New Cocktail', new_cocktail_path, {class: "btn btn-primary btn-sm pullUp"} %>
 </div>

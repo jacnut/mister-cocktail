@@ -209,8 +209,8 @@ slideRight
   animation-name: slideRight;
   -webkit-animation-name: slideRight;
 
-  animation-duration: 1s;
-  -webkit-animation-duration: 1s;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
@@ -593,8 +593,8 @@ hatch
   animation-name: hatch;
   -webkit-animation-name: hatch;
 
-  animation-duration: 2s;
-  -webkit-animation-duration: 2s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
 
   animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
@@ -733,8 +733,8 @@ pulse
   animation-duration: 1.5s;
   -webkit-animation-duration: 1.5s;
 
-  animation-iteration-count: infinite;
-  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: 4;
+  -webkit-animation-iteration-count: 4;
 }
 
 @keyframes pulse {
